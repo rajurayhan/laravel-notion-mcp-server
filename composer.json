@@ -1,0 +1,25 @@
+{
+  "name": "rajurayhan/laravel-notion-mcp-server",
+  "description": "Notion MCP server for Laravel — expose Notion REST API as AI-callable MCP tools",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^11.0|^12.0",
+    "laravel/mcp": ">=0.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "RajuRayhan\\LaravelNotionMcpServer\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RajuRayhan\\LaravelNotionMcpServer\\NotionMcpServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
